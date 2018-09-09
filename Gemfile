@@ -36,6 +36,7 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'database_cleaner'
   gem 'rails-controller-testing'
   gem 'bullet'
   gem 'simplecov', require: false
@@ -62,6 +63,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+gem 'active_model_serializers'
 gem 'oj'
 gem 'faraday'
 gem 'sidekiq'
