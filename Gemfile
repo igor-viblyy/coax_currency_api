@@ -36,6 +36,7 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'database_cleaner'
   gem 'rails-controller-testing'
   gem 'bullet'
   gem 'simplecov', require: false
