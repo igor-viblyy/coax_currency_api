@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :curencies
+  has_many :currencies
 
   validates :email, presence: true
 end
