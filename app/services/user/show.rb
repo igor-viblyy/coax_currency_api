@@ -14,10 +14,10 @@ class User
     end
 
     private
-      # attr_reader :id, :email
-      #
-      # def find_user(id)
-      #   User.find_by(id: id)
-      # end
+    # attr_reader :id, :email
+    #
+    # def find_user(id)
+    #   User.find_by(id: id)
+    # end
   end
 end

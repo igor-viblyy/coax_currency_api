@@ -59,9 +59,9 @@ GEM
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
-    bootsnap (1.3.1)
+    bootsnap (1.3.2)
       msgpack (~> 1.0)
-    bootsnap (1.3.1-java)
+    bootsnap (1.3.2-java)
       msgpack (~> 1.0)
     brakeman (4.3.1)
     builder (3.2.3)
@@ -90,10 +90,10 @@ GEM
     equalizer (0.0.11)
     erubi (1.7.1)
     erubis (2.7.0)
-    factory_bot (4.11.0)
+    factory_bot (4.11.1)
       activesupport (>= 3.0.0)
-    factory_bot_rails (4.11.0)
-      factory_bot (~> 4.11.0)
+    factory_bot_rails (4.11.1)
+      factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
     faker (1.9.1)
       i18n (>= 0.7)
@@ -161,14 +161,13 @@ GEM
       mini_portile2 (~> 2.3.0)
     nokogiri (1.8.4-x86-mingw32)
       mini_portile2 (~> 2.3.0)
-    oj (3.6.7)
     parallel (1.12.1)
     parser (2.5.1.2)
       ast (~> 2.4.0)
     path_expander (1.0.3)
-    pg (1.1.2)
-    pg (1.1.2-x64-mingw32)
-    pg (1.1.2-x86-mingw32)
+    pg (1.1.3)
+    pg (1.1.3-x64-mingw32)
+    pg (1.1.3-x86-mingw32)
     powerpack (0.1.2)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -191,6 +190,7 @@ GEM
     puma (3.12.0)
     puma (3.12.0-java)
     rack (2.0.5)
+    rack-cors (1.0.2)
     rack-protection (2.0.3)
       rack
     rack-test (1.1.0)
@@ -250,7 +250,7 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    rubocop (0.58.2)
+    rubocop (0.59.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.5, != 2.5.1.1)
@@ -261,11 +261,13 @@ GEM
     rubocop-rails (1.5.0)
       railties (>= 3.0)
       rubocop (~> 0.53)
+    rubocop-rspec (1.29.1)
+      rubocop (>= 0.58.0)
     ruby-progressbar (1.10.0)
     ruby_dep (1.5.0)
     ruby_parser (3.11.0)
       sexp_processor (~> 4.9)
-    rubycritic (3.5.0)
+    rubycritic (3.5.1)
       flay (~> 2.8)
       flog (~> 4.4)
       launchy (= 2.4.3)
@@ -344,7 +346,7 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
-  active_model_serializers
+  active_model_serializers (~> 0.10.0)
   annotate
   bootsnap (>= 1.1.0)
   brakeman
@@ -355,18 +357,19 @@ DEPENDENCIES
   faker
   faraday
   listen (>= 3.0.5, < 3.2)
-  oj
   pg (>= 0.18, < 2.0)
   pry
   pry-byebug
   pry-rails
   puma (~> 3.11)
+  rack-cors
   rails (~> 5.2.1)
   rails-controller-testing
   redis (~> 4.0)
   rspec-rails
   rubocop
   rubocop-rails
+  rubocop-rspec
   rubycritic
   shoulda-matchers
   sidekiq
