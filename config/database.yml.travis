@@ -1,0 +1,6 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: coax_currency_ci_test
+  host: localhost
+  port: 5432
