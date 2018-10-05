@@ -1,12 +1,5 @@
 addons:
-  postgresql: 10
-  apt:
-    package:
-      - postgresql-10
-      - postgresql-client-10
-env:
-  global:
-  - PGPORT=5433
+  postgresql: 9.6
 
 before_script:
   - cp config/database.yml.travis config/database.yml
