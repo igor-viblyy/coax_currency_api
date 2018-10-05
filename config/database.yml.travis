@@ -1,0 +1,4 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: coax_currency_ci_test
