@@ -1,5 +1,5 @@
-require 'rails_helper'
+# require 'rails_helper'
 
-RSpec.describe CurrenciesController, type: :controller do
+# RSpec.describe CurrenciesController, type: :controller do
 
-end
+# end
