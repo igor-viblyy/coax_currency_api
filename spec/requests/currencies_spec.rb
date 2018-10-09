@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Currency API", type: :request do
   let!(:users) { create_list(:user, 10) }
+  # let!(:currencies) { create_list(:currency, 2) }
 
   describe "POST /currncies" do
     let(:valid_attributes) { { from: "UAH", to: "USD" } }
@@ -28,4 +29,11 @@ RSpec.describe "Currency API", type: :request do
       end
     end
   end
+  # describe "DELETE /currency/:id" do
+  #   before { delete "/users/#{users.first.id}/currencies/#{currency_id}" }
+
+  #   it "return status 204" do
+  #     expect(response).to have_http_status(204)
+  #   end
+  # end
 end
